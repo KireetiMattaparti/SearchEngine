@@ -1,0 +1,16 @@
+Programming language - Python
+
+How the code is structured?
+s 
+i) Initially we will run the file "create_dataset.py" and in which it takes authentication from kaggle and it downloads the dataset from kaggle.
+ii) After that we will clean the data based on our preferences that what we need the data from the entire dataset and store it in a file named "cleaned_data.csv" using the file "clean_data.py".
+iii) Next By the using the file "embed_and_store_data.py" we will store the cleaned dataset into the vector database by using elastic search. Elastic search will run externally from our local device by creating a port for data entry.
+iv) Then we will run "search.py" to create streamlit app and to connect with vector database to retrieve data in the streamlit app.
+ 
+Note: Before running the file "embed_and_store_data.py", we need to run the elastic search from our desktop file from elasticsearch/bin -> elasticsearch.bat
+
+References :
+https://www.elastic.co/search-labs/blog/may-2023-launch-sparse-encoder-ai-model
+https://www.searchenginejournal.com/semantic-search-how-it-works-who-its-for/438960/
+https://ravi-chan.medium.com/how-to-download-any-data-set-from-kaggle-7e2adc152d7f
+https://realpython.com/chromadb-vector-database/
